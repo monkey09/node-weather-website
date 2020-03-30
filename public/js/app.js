@@ -8,7 +8,7 @@ form.addEventListener('submit', (e) => {
   messageOne.textContent = 'Loading...'
   messageTwo.textContent = ''
   let address = input.value
-  fetch(`http://localhost:3000/weather?address=${address}`)
+  fetch(`/weather?address=${address}`)
   .then(response => response.json())
   .then(json => {
     if (json[0].error) {
