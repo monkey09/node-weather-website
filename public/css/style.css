@@ -29,7 +29,7 @@ body{
 }
 .navbar a:hover {
   transition: color .3s ease-in-out;
-  color: #DDD
+  color: #DDD;
 }
 h1{
   color: #444
