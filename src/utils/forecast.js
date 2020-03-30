@@ -9,7 +9,7 @@ const forecast = (latitude, longitude, callback) => {
     if (error) {
       callback(error, undefined)
     } else {
-      callback(undefined, `${daily.summary} It is currently ${currently.temperature} degress out. there is a ${currently.precipProbability}% chance of rain.`)
+      callback(undefined, `${daily.summary} It is currently ${currently.temperature} degress out with hight temperature: ${daily.data[0].temperatureHigh} and with low temperature: ${daily.data[0].temperatureLow}. there is a ${currently.precipProbability}% chance of rain.`)
     }
   })
   .catch(() => {
